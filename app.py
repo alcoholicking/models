@@ -11,4 +11,9 @@ def read_root():
 
 @app.get("/prompts/{prompt}")
 def give_prompt(prompt: str):
-    return llm_chain(prompt)
+
+    # get LLM returned grapes
+    return llm_chain(prompt)["text"]
+    # 
+
+    # return 
